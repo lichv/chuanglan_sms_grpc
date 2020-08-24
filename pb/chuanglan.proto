@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "/pb";
+
+package pb;
+
+service Sms {
+    rpc Send(ChuanglanRequest) returns (ChuanglanReply){}
+}
+
+message ChuanglanRequest{
+    string mobile = 1;
+    string content = 2;
+}
+
+message ChuanglanReply{
+    string message = 1;
+}
