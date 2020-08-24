@@ -15,7 +15,7 @@ git clone -b v1.31.0 https://github.com/grpc/grpc-go
 ```
 
 ```
-cd ../../cmd/protoc-gen-go-grpc && go install .
+cd cmd/protoc-gen-go-grpc && go install .
 ```
 
 ### 生成grpc代码
